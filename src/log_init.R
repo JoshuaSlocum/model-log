@@ -31,6 +31,10 @@ log_init <- function(path = getwd()) {
       ,fill = T
       ,append = TRUE)
   
+  # Add log file path to global vars
+  # This is done so path does not need to be passed to funcs
+  log_file <<- log_file
+  
   # Show message that file was created to console
   message(paste("Created model-log.txt in", path, sep = " "))
 }

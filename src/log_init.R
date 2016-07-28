@@ -26,9 +26,9 @@ log_init <- function(path = getwd()) {
   
   # Add header to file
   cat(log_header
-      ,file = log_file
-      ,sep = ""
-      ,fill = T
+      ,file   = log_file
+      ,sep    = ""
+      ,fill   = T
       ,append = TRUE)
   
   # Add log file path to global vars

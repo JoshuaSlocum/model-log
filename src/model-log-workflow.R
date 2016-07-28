@@ -28,4 +28,4 @@ cat(paste(as.character(model_1$call), collapse = "\t")
     ,fill = T)
 
 # Test of reading log file in to DF
-model_log <- read.delim("model-log.txt", )
+model_log <- read.delim("model-log.txt")

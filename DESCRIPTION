@@ -1,13 +1,16 @@
-Package: model_log
+Package: model.log
 Title: Help you keep track of models you fit
 Version: 0.0.01
 Authors@R: person("Joshua", "Slocum", email = "joshuaslocum@gmail.com",
                     role = c("aut", "cre"))
 Description: Right now, it just creates a text file for logging, and allows you
-    to log model objects (formular, data.frame name, user, and time stamp) to 
+    to log model objects (formular, data.frame name, user, and time stamp) to
     the file.
-Depends: R (>= 3.3.0)
-License: MIT
+Depends:
+    R (>= 3.3.0)
+License: file LICENSE
 LazyData: true
 Imports:
     magrittr
+RoxygenNote: 5.0.1
+Suggests: testthat

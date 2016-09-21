@@ -1,20 +1,19 @@
-# Header ------------------------------------------------------------------
-# Created: 7/27/2016
-# Author: Joshua Slocum
-# Purpose: simple function to create model log file
-
-
-# Define Function ---------------------------------------------------------
-
+#' Initialize the log file
+#'
+#' @param path File path to the log file. Default is the current working
+#' directory.
+#' @return A log file named "model_log.txt is created in the directory"
+#' @export
+#' 
 log_init <- function(path = getwd()) {
   
   # Set full path with file name
-  log_file <- paste(path, "model-log.txt", sep = "/")
+  log_file <- paste(path, "model_log.txt", sep = "/")
   
   # Check if model-log.txt already exists
   # Stop if it exists
   file_exists <- file.exists(log_file)
-  if (file_exists) {stop("model-log.txt already exists in directory.")}
+  if (file_exists) {stop("model_log.txt already exists in directory.")}
   
   # Create log file, it will be tab separated
   # By convention each line will end with a newline
@@ -41,6 +40,6 @@ log_init <- function(path = getwd()) {
   log_file <<- log_file
   
   # Show message that file was created to console
-  message(paste("Created model-log.txt in", path, sep = " "))
+  message(paste("Created model_log.txt in", path, sep = " "))
 }
 

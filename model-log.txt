@@ -1,1 +1,0 @@
-model_id	model_type	specificaiton	data	modeler	log_date

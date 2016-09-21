@@ -21,7 +21,12 @@ log_init <- function(path = getwd()) {
   file.create(log_file)
   
   # Create log file header lind
-  log_header <- paste(c("model_type", "specificaiton", "data")
+  log_header <- paste(c("model_id"
+                        ,"model_type" 
+                        ,"specificaiton"
+                        ,"data"
+                        ,"modeler"
+                        ,"log_date")
                       ,collapse = "\t")
   
   # Add header to file

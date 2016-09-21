@@ -20,8 +20,17 @@ log_add <- function(model_obj) {
   call_length_test <- length(model_call) == 3
   if (!call_length_test) {stop("Model call has more than 3 elements")}
   
+  # Get user = modeler
+  user_name <- Sys.info()["user"][[1]]
+  
+  # Get log time
+  log.ts <- as.character(Sys.time())
+  
   # Create new model log lne
-  log_line <- paste(as.character(model_call), collapse = "\t")
+  log_line <- paste(c(as.character(model_call)
+                    ,user_name
+                    ,log.ts)
+                    ,collapse = "\t")
   
   # Add log line to file
   cat(log_line

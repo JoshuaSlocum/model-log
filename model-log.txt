@@ -1,2 +1,1 @@
-model_type	specificaiton	data
-lm	mpg ~ as.factor(cyl) + hp + wt	mtcars
+model_id	model_type	specificaiton	data	modeler	log_date

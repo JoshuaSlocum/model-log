@@ -3,10 +3,18 @@
 # Author: Joshua Slocum
 # Purpose: simple function to add model call to log
 
+#' Add an entry to the log
+#'
+#' @param model_obj The model object of the model to be logged
+#' @param log_path File path to the log file. Default is the current working
+#' directory.
+#' @return A log file named "model_log.txt is created in the directory"
+#' @export
+#' 
 
 # Define function ---------------------------------------------------------
 
-log_add <- function(model_obj) {
+log_add <- function(model_obj, log_path) {
   
   # Check that a call is an element in model_obj
   has_call <- "call" %in% names(model_obj)
@@ -26,15 +34,26 @@ log_add <- function(model_obj) {
   # Get log time
   log.ts <- as.character(Sys.time())
   
+  # Get model type (i.e. R function name)
+  model_type <- model_call[1]
+  
+  # Get model spec
+  model_spec <- model_call[2]
+  
+  # Get data set name
+  model_data <- model_call[3]
+  
   # Create new model log lne
-  log_line <- paste(c(as.character(model_call)
+  log_line <- paste(c(model_type
+                    ,model_spec
+                    ,model_data
                     ,user_name
                     ,log.ts)
-                    ,collapse = "\t")
+                    ,collapse = ",")
   
   # Add log line to file
   cat(log_line
-      ,file   = log_file # should be global var
+      ,file   = log_path # should be global var
       ,append = TRUE
       ,sep    = ""
       ,fill   = T)

@@ -11,7 +11,7 @@ log_init(path = getwd())
 directory.}
 }
 \value{
-A log file named "model_log.txt is created in the directory"
+A log file named "model_log.csv is created in the directory"
 }
 \description{
 Initialize the log file

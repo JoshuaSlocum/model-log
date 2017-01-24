@@ -1,0 +1,26 @@
+---
+title: "Project Notes"
+author: "Joshua Slocum"
+date: "March 5, 2016"
+output: html_document
+---
+
+# Example workflow
+1. Source necessary packages
+2. Source necessary functions
+3. Load raw data
+  a. Could be a DB query
+  b. Could be a flat file
+4. Clean data
+  a. Treat missing values
+  b. Clean up dates/times
+  c. Put into a "tidy" format
+5. Feature Engineering
+  a. Apply feature engineering functions to data
+6. Modeling
+  a. Build models
+....
+
+Design feature_engineering script/function to only apply new features that do not exist yet in data. This is to be more efficient during interactive analysis/R&D (no need to re-create features already attached to the data). But, if someone starts with a fresh session it will be completly reproducible. 
+
+Determine if better practice to keep raw and engineerd features separate and join at time of building modeling dataset, or to keep together from start. Separate might be better for creating new features from raw, since you'd have to manipulate a smaller dataset (maybe?) but together keeps things compact as long as we maintain lists of "original" and "engineered" features. 

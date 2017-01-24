@@ -18,7 +18,7 @@ cat(paste(log_header, collapse = "\t")
 
 # Load data and fit fake model
 data("mtcars")
-model_1  <- lm(mpg ~ as.factor(cyl) + hp + wt, data = mtcars)
+model_1  <- glm(mpg ~ as.factor(cyl) + hp + wt, data = mtcars)
 
 # Write model call to file
 cat(paste(as.character(model_1$call), collapse = "\t")

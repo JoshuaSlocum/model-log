@@ -2,7 +2,8 @@
 % Please edit documentation in R/log_add.R
 \name{log_add}
 \alias{log_add}
-\title{Add an entry to the log}
+\title{log_add is a generic function that records the fitting of a model in the
+provided log system.}
 \usage{
 log_add(model_obj, log_path)
 }
@@ -13,9 +14,11 @@ log_add(model_obj, log_path)
 directory.}
 }
 \value{
-A log file named "model_log.txt is created in the directory"
+A log entry is recorded in the specified file, and the modelobject
+is passed through.
 }
 \description{
-Add an entry to the log
+log_add is a generic function that records the fitting of a model in the
+provided log system.
 }
 

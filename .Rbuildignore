@@ -4,3 +4,4 @@ exclude/
 ex_data/
 .travis.yml
 examples/
+app/

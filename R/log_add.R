@@ -1,5 +1,5 @@
 # Header ------------------------------------------------------------------
-# Created: 7/27/2016
+# Created: 1/23/2016
 # Author: Joshua Slocum
 # Purpose: simple function to add model call to log
 

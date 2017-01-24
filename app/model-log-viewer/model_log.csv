@@ -1,0 +1,2 @@
+model_type,specificaiton,data,modeler,log_date
+glm(),(mpg ~ as.factor(cyl) + hp + wt)(),mtcars(),Joshua Slocum,2017-01-23 22:14:55

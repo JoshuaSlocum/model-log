@@ -1,2 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+exclude/
+ex_data/
+.travis.yml
+examples/

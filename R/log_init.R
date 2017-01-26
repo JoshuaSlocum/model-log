@@ -1,8 +1,9 @@
-#' Initialize the log file
+#' @title Log file creation
+#' @description Initialize the log file
 #'
 #' @param path File path to the log file. Default is the current working
 #' directory.
-#' @return A log file named "model_log.csv is created in the directory"
+#' @return A log file named "model_log.csv" is created in the directory
 #' @export
 #' 
 log_init <- function(path = getwd()) {

@@ -2,7 +2,7 @@
 % Please edit documentation in R/log_init.R
 \name{log_init}
 \alias{log_init}
-\title{Initialize the log file}
+\title{Log file creation}
 \usage{
 log_init(path = getwd())
 }
@@ -11,7 +11,7 @@ log_init(path = getwd())
 directory.}
 }
 \value{
-A log file named "model_log.csv is created in the directory"
+A log file named "model_log.csv" is created in the directory
 }
 \description{
 Initialize the log file

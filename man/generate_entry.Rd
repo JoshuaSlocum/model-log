@@ -2,7 +2,7 @@
 % Please edit documentation in R/generate_entry.R
 \name{generate_entry}
 \alias{generate_entry}
-\title{Helper function to create log entry object}
+\title{Combine results from helper functions to create an entry for the model}
 \usage{
 generate_entry(object)
 }
@@ -13,6 +13,6 @@ generate_entry(object)
 Named list of values to be used as a line entry in the model log.
 }
 \description{
-Helper function to create log entry object
+Combine results from helper functions to create an entry for the model
 }
 

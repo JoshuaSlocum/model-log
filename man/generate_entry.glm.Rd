@@ -4,7 +4,7 @@
 \alias{generate_entry.glm}
 \title{Create a log entry for GLM objects}
 \usage{
-\method{generate_entry}{glm}(object)
+generate_entry.glm(object)
 }
 \arguments{
 \item{object}{The model object of the model for which an entry is desired}
